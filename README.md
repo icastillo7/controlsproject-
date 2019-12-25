@@ -1,9 +1,9 @@
 ## Controls Project 
 
-Angular Velocity Control
+##Angular Velocity Control
 
-MECA 482-03
-Fall 2019
+##MECA 482-03
+##Fall 2019
 
 
 
@@ -17,7 +17,7 @@ William Huegli;
 
 Video link: https://youtu.be/K2sXpFd4kso
 
-Introduction
+##Introduction
 
 For our project we have built a hoist winch with feedback control. This can be useful if a steady angular velocity from the winch is desired. As more load is applied, more voltage is required to maintain the angular velocity of the winch.
 
@@ -30,7 +30,7 @@ Msh, Rsk = mass and radius of the motor shaft
 Msp, rsp = mass and radius of the spool
 Alpha = rotational acceleration
 
-Control Theory Modeling
+##Control Theory Modeling
 
 Figure 3: DC motor system where applied voltage is input and the output is current, torque, and speed.
 
@@ -75,7 +75,7 @@ Finding the transfer function relating input voltage to motor speed:
 Setting s = 0 yields the steady-state response of motor speed:
 
 
-Tachometer(Kt)
+##Tachometer(Kt)
 
 
 
@@ -149,7 +149,7 @@ The above matlab models are modeled using the back emf as the feedback signal ho
 
 
 
-Appendix A
+##Appendix A
 Matlab Code:
 % MECA 482
 % Anglular Velocity Control with Feedback of DC Motor
@@ -258,7 +258,7 @@ sys_cl =
 
 Continuous-time state-space model.
  
-References
+##References
 
 
 Mathworks, C. (2019). DC motor control. Retrieved from https://www.mathworks.com/help/control/examples/dc-motor-control.html
