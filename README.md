@@ -8,12 +8,12 @@ Fall 2019
 
 
 
-Project Manager : Eduardo Herrera (5182)
-Ryan Douglass (3323)
-Alfonso Romero (3323)
-Ivan Castillo (5182)
-Cody Anderson (5182)
-William Huegli (5182)
+Project Manager : Eduardo Herrera;
+Ryan Douglass;
+Alfonso Romero ;
+Ivan Castillo ;
+Cody Anderson; 
+William Huegli;
 
 Video link: https://youtu.be/K2sXpFd4kso
 
