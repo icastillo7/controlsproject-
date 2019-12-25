@@ -28,7 +28,7 @@ Figure 1 illustrates the physical system in top view and side view. The system c
 
 The load of the system can be modeled through the use of Newton’s laws.
 
-x2
+![](Pictures/image2.PNG)
 
 g = gravity positive direction is down
 M load = mass of the load
@@ -38,7 +38,7 @@ Alpha = rotational acceleration
 
 ##Control Theory Modeling
 
-x3
+![](Pictures/image3.PNG)
 
 Figure 3: DC motor system where applied voltage is input and the output is current, torque, and speed.
 
