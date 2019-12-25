@@ -23,6 +23,12 @@ For our project we have built a hoist winch with feedback control. This can be u
 
 Figure 1 illustrates the physical system in top view and side view. The system consists of a main support beam, two support bearings and a shaft, and the spool. Torque is applied to the shaft and spool from a motor and the angular velocity is monitored by a tachometer.
 
+x1
+
+
+The load of the system can be modeled through the use of Newton’s laws.
+
+x2
 
 g = gravity positive direction is down
 M load = mass of the load
@@ -31,6 +37,8 @@ Msp, rsp = mass and radius of the spool
 Alpha = rotational acceleration
 
 ##Control Theory Modeling
+
+x3
 
 Figure 3: DC motor system where applied voltage is input and the output is current, torque, and speed.
 
