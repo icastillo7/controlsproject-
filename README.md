@@ -23,7 +23,7 @@ For our project we have built a hoist winch with feedback control. This can be u
 
 Figure 1 illustrates the physical system in top view and side view. The system consists of a main support beam, two support bearings and a shaft, and the spool. Torque is applied to the shaft and spool from a motor and the angular velocity is monitored by a tachometer.
 
-![](images/image1.PNG)
+![](Pictures/image1.PNG)
 
 
 The load of the system can be modeled through the use of Newton’s laws.
