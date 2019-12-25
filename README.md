@@ -161,8 +161,11 @@ The above matlab models are modeled using the back emf as the feedback signal ho
 
 
 Appendix A
+
 Matlab Code:
+
 % MECA 482
+
 % Anglular Velocity Control with Feedback of DC Motor
 
 clear all, close all, close all
