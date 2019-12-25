@@ -42,8 +42,10 @@ Alpha = rotational acceleration
 
 Figure 3: DC motor system where applied voltage is input and the output is current, torque, and speed.
 
-Steady state speed of the motor with a constant voltage applied is:
+![](Pictures/image4.PNG)
 
+Steady state speed of the motor with a constant voltage applied is:
+![](Pictures/image5.PNG)
 KM = motor gain
 V   = applied input voltage
 R   = resistance
@@ -52,22 +54,22 @@ KV = input gain
 B   = friction
 
 Steady-state torque of the motor with a constant voltage applied is shown to be:
-
+![](Pictures/image6.PNG)
 Figure 4: The proportional relationship of motor torque to motor speed with an increasing applied voltage.
 
 Transfer functions of the system must be developed in order to compute the frequency response in MATLAB. A time signal V(t) may have a Laplace Transform of:
- 
+ ![](Pictures/image7.PNG)
 Transfer function relates the output response to the input response. With an input of u(t) and an output y(t), H(s) is the transfer function in the s-domain that relates the ratio of output to input.
 
-
+![](Pictures/image8.PNG)
 The system for controlling the angular velocity of the motor shaft requires that multiple transfer functions be used. The transfer functions may be combined into an equivalent transfer function. For the DC motor control we have:
 
 
-
+![](Pictures/image9.PNG)
 
 Combining the equations into the system model yields:
 
-
+![](Pictures/image10.PNG)
 Figure 5 - Feedback
 		
 V = Reference signal
@@ -78,13 +80,13 @@ I = Current
 1/(sJ+B) = Mechanical sub-system transfer function
 
 Finding the transfer function relating input voltage to motor speed:
-
+![](Pictures/image11.PNG)
 
 Setting s = 0 yields the steady-state response of motor speed:
-
+![](Pictures/image12.PNG)
 
 ##Tachometer(Kt)
-
+![](Pictures/image12.PNG)
 
 
 The tachometer can be modeled as a Derivative controller:
@@ -131,15 +133,16 @@ Kb = 0.1;     % back emf constant
 kf = 0.2;     % Nms
 J = 0.02;     % kg.m^2/s^2 (Newton N)
 
+![](Pictures/image13.PNG)
 
 Root Locus:
 
 Next, a torque disturbance Td  is introduced and a gain value for integral control (K/s) is found using root locus plotting in matlab. A value of K=5 can be determined as it falls within the results range (Figure 7).  
 
-
+![](Pictures/image14.PNG)
 Disturbance Rejection:
 K value can be then used in the system and modeled with Td. The system now can react and correct a slowing down of the angular velocity of the motors output due to disturbances. The torque disturbance is applied and the integrative controller reacts with a correction in motor input voltage to increase motor speed and torque (Figure 4). When load is released the Controller adjusts the motor input voltage once again. 
-
+![](Pictures/image15.PNG)
 Improvements:
 A P controller can be added to help with a faster response time, and adjusting the integral gain to deal with the P controller’s overshoot and oscillations. A PI controller would make the response faster and smoother. 
 
